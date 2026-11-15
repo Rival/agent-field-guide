@@ -1,0 +1,14 @@
+{
+  "name": "agent-field-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A public Russian-language field guide to practical AI agents",
+  "scripts": {
+    "test": "playwright test",
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
+    "@playwright/test": "1.65.1"
+  }
+}
