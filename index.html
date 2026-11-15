@@ -164,7 +164,7 @@
       <section id="independence">
         <p class="section-stage"><span aria-hidden="true">1</span>Этап «Общаться» · выбор инструмента</p>
         <h2>Не зависеть всей работой от одного AI-сервиса</h2>
-        <p class="gist"><strong>Суть.</strong> Проект живёт в вашем репозитории, а модель — сменная деталь. Подписка Claude работает только в официальных приложениях Anthropic, подписку ChatGPT можно подключить и к некоторым сторонним агентам.</p>
+        <p class="gist"><strong>Суть.</strong> Проект живёт в вашем репозитории, а модель — сменная деталь. Подписка Claude работает только в официальных приложениях Anthropic, подписку ChatGPT можно подключить и к некоторым сторонним агентам, а китайские coding-планы для этого и сделаны.</p>
         <figure class="diagram provider-map">
           <div class="provider-origin"><strong>Ваш проект</strong><span>Код + требования + инструкции + история изменений</span></div>
           <div class="provider-connector" aria-hidden="true">↓</div>
@@ -177,17 +177,18 @@
         <p>Это возможно и с Claude Code или Codex: они тоже работают с локальными файлами и Git. Особенность Pi — смена поставщиков внутри одного настраиваемого окружения.</p>
 
         <h3 class="table-title">Подписка или API: что куда подключается</h3>
-        <div class="table-scroll" role="region" aria-label="Сравнение подписок Claude и ChatGPT" tabindex="0">
-          <table class="compare">
-            <thead><tr><th scope="col"><span class="visually-hidden">Сценарий</span></th><th scope="col">Подписка Claude</th><th scope="col">Подписка ChatGPT</th></tr></thead>
+        <div class="table-scroll" role="region" aria-label="Сравнение подписок Claude, ChatGPT и китайских coding-планов" tabindex="0">
+          <table class="compare subs">
+            <thead><tr><th scope="col"><span class="visually-hidden">Сценарий</span></th><th scope="col">Подписка Claude</th><th scope="col">Подписка ChatGPT</th><th scope="col">Китайские coding-планы</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Официальные приложения поставщика</th><td data-label="Claude"><span class="mark yes">Да</span> Claude Code и приложения Anthropic</td><td data-label="ChatGPT"><span class="mark yes">Да</span> приложения OpenAI</td></tr>
-              <tr><th scope="row">Сторонние агенты: Pi, Hermes</th><td data-label="Claude"><span class="mark no">Нет</span> нужен отдельно оплачиваемый <dfn title="Программный доступ к модели с оплатой за объём">API</dfn></td><td data-label="ChatGPT"><span class="mark yes">Да</span> через провайдер OpenAI/ChatGPT</td></tr>
-              <tr><th scope="row">Любая программа</th><td data-label="Claude"><span class="mark no">Нет</span></td><td data-label="ChatGPT"><span class="mark maybe">Зависит</span> от тарифа, прав рабочего пространства и условий</td></tr>
-              <tr><th scope="row">Первоисточник</th><td data-label="Claude"><a href="https://code.claude.com/docs/en/legal-and-compliance">Правила Anthropic</a></td><td data-label="ChatGPT"><a href="https://help.openai.com/en/articles/20001542-using-your-chatgpt-plan-in-other-apps-and-sites">Условия OpenAI</a>, <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/integrations/providers.md">провайдеры Hermes</a></td></tr>
+              <tr><th scope="row">Официальные приложения поставщика</th><td data-label="Claude"><span class="mark yes">Да</span> Claude Code и приложения Anthropic</td><td data-label="ChatGPT"><span class="mark yes">Да</span> приложения OpenAI</td><td data-label="Китайские планы"><span class="mark yes">Да</span></td></tr>
+              <tr><th scope="row">Сторонние агенты: Pi, Hermes, Claude Code</th><td data-label="Claude"><span class="mark no">Нет</span> нужен отдельно оплачиваемый <dfn title="Программный доступ к модели с оплатой за объём">API</dfn></td><td data-label="ChatGPT"><span class="mark yes">Да</span> через провайдер OpenAI/ChatGPT</td><td data-label="Китайские планы"><span class="mark yes">Да</span> для этого и сделаны: подключаются через совместимый API</td></tr>
+              <tr><th scope="row">Любая программа</th><td data-label="Claude"><span class="mark no">Нет</span></td><td data-label="ChatGPT"><span class="mark maybe">Зависит</span> от тарифа, прав рабочего пространства и условий</td><td data-label="Китайские планы"><span class="mark maybe">Почти</span> если программа умеет OpenAI- или Anthropic-совместимый API</td></tr>
+              <tr><th scope="row">Первоисточник</th><td data-label="Claude"><a href="https://code.claude.com/docs/en/legal-and-compliance">Правила Anthropic</a></td><td data-label="ChatGPT"><a href="https://help.openai.com/en/articles/20001542-using-your-chatgpt-plan-in-other-apps-and-sites">Условия OpenAI</a>, <a href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/integrations/providers.md">провайдеры Hermes</a></td><td data-label="Китайские планы"><a href="https://z.ai/subscribe">GLM Coding Plan</a>, <a href="https://help.aliyun.com/en/model-studio/coding-plan">Qwen Coding Plan</a></td></tr>
             </tbody>
           </table>
         </div>
+        <p><strong>Китайские поставщики продают подписки специально под сторонние агенты.</strong> GLM (Z.ai), Kimi, MiniMax и Qwen предлагают coding-планы: фиксированная плата вместо оплаты за каждый запрос, а подключаются они к Claude Code, Pi и другим агентам простой сменой адреса и ключа. Мы для примера используем <strong>GLM Coding Max — около $600 в год</strong> по цене на момент покупки; тарифы с тех пор менялись, актуальные смотрите у поставщика.</p>
 
         <div class="prompt">
           <h3><span aria-hidden="true">📋</span> Запрос: проверка независимости</h3>
@@ -202,6 +203,7 @@
             <li>Наличие технического способа входа не означает разрешение поставщика.</li>
             <li>Подписка ChatGPT в сторонних агентах — не безлимитный API-ключ: модели и лимиты могут отличаться.</li>
             <li>Гибкое окружение не отменяет региональные ограничения и правила сервиса.</li>
+            <li><strong>Китайский план — это китайский поставщик.</strong> Переданный контекст уходит на его серверы. Для клиентских и персональных данных проверьте его политику и свои обязательства. Лимиты считаются окнами по несколько часов, а в часы пик запросы могут расходоваться быстрее.</li>
           </ul>
         </aside>
 
@@ -428,7 +430,7 @@
       <section id="company">
         <p class="section-stage"><span aria-hidden="true">5</span>Этап «Помогать команде»</p>
         <h2>Свой агент внутри компании</h2>
-        <p class="gist"><strong>Суть.</strong> Тот же Hermes может стать внутренним помощником сотрудников: искать по документации, готовить сводки и черновики. Но права, журнал действий и подтверждения придётся проектировать отдельно.</p>
+        <p class="gist"><strong>Суть.</strong> Тот же Hermes может стать внутренним помощником сотрудников: искать по документации, готовить сводки и черновики. Доступ к моделям для всей команды удобно раздавать через общий шлюз с учётом расхода. Права, журнал действий и подтверждения придётся проектировать отдельно.</p>
         <figure class="diagram">
           <div class="company-flow"><div><strong>Сотрудник</strong><span>Вопрос в рабочем чате</span></div><span aria-hidden="true">→</span><div><strong>Агент на основе Hermes</strong><span>Проверка прав и доступные инструменты</span></div><span aria-hidden="true">→</span><div><strong>Рабочие системы</strong><span>Документация, задачи, CRM</span></div></div>
           <figcaption>Это схема целевого решения, а не обещание, что все корпоративные права и интеграции появятся после установки.</figcaption>
@@ -439,10 +441,29 @@
           <p>«Собери статус проекта: что завершено, какие задачи зависли и где нужен ответ руководителя. Дай ссылки на источники».</p>
         </div>
         <p>При подключении к нужным системам агент может искать по документации, помогать новичкам, готовить сводки и черновики задач, выполнять разрешённые операции в CRM и уведомлять о проблемах. Начинать разумнее с чтения разрешённой информации и подготовки черновиков.</p>
+        <h3 class="sub-title">Общий доступ к моделям для команды</h3>
+        <p>Когда AI нужен не одному человеку, а нескольким, удобно поставить между людьми и поставщиками <strong>шлюз</strong>. Мы используем <a href="https://docs.litellm.ai/docs/proxy/virtual_keys">LiteLLM</a> — это как свой <a href="https://openrouter.ai/">OpenRouter</a> внутри команды.</p>
+        <figure class="diagram">
+          <div class="flow three">
+            <div class="flow-box"><strong>Сотрудники и их агенты</strong><span>У каждого свой ключ</span></div><span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-box featured"><strong>Шлюз LiteLLM</strong><span>Ключи поставщиков, бюджеты, учёт расхода</span></div><span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-box"><strong>Поставщики</strong><span>GLM, OpenAI, Anthropic API, OpenRouter</span></div>
+          </div>
+          <figcaption>Сотрудник видит один адрес и свой ключ; какие модели и подписки стоят за шлюзом — решает администратор.</figcaption>
+        </figure>
+        <ul class="bullet-list">
+          <li><strong>Дать AI нужным людям</strong> — выдать личный ключ и так же легко его отозвать.</li>
+          <li><strong>Видеть расход</strong> — кто, сколько и на какие модели потратил; при необходимости поставить бюджет на человека.</li>
+          <li><strong>Держать ключи поставщиков в одном месте</strong> — они не расползаются по ноутбукам и конфигам.</li>
+          <li><strong>Менять поставщика централизованно</strong> — переключить модель или включить резервную, не перенастраивая всех.</li>
+        </ul>
+        <p>Альтернативы: облачный OpenRouter (оплата по факту, без своего сервера) или другие самостоятельно размещаемые шлюзы. Выбор зависит от того, где должны лежать ключи и журнал запросов.</p>
         <aside class="note limits">
           <p class="note-label"><span aria-hidden="true">⚠️</span> Ограничения</p>
           <ul>
             <li><strong>Компаниям нужен не просто бот с общим доступом ко всему.</strong> Нужны разграничение прав между сотрудниками, журнал действий, защита клиентских данных, контроль расходов и подтверждения для важных изменений. Часть этого придётся отдельно спроектировать и реализовать.</li>
+            <li><strong>Учёт ломается молча.</strong> Клиент, настроенный напрямую к поставщику в обход шлюза, продолжит работать — просто пропадёт из статистики. А сам шлюз хранит все ключи: его нужно защищать как сервер с паролями.</li>
+            <li>Проверьте условия подписки: некоторые планы рассчитаны на одного человека, и делить их на команду можно не всегда.</li>
             <li>Сообщения, документы и найденные страницы могут содержать вредоносные инструкции: агент не должен считать любой прочитанный текст разрешением на действие.</li>
           </ul>
         </aside>
@@ -475,6 +496,10 @@
           <li><a href="https://github.com/openclaw/openclaw">OpenClaw</a><span>Платформа личного помощника</span></li>
           <li><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a><span>Расширяемое окружение, developer preview</span></li>
           <li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.md">Безопасность DeepSeek Harness</a><span>Ограничения экспериментального проекта</span></li>
+          <li><a href="https://z.ai/subscribe">GLM Coding Plan</a><span>Китайская coding-подписка для сторонних агентов</span></li>
+          <li><a href="https://help.aliyun.com/en/model-studio/coding-plan">Qwen Coding Plan</a><span>Подписка Alibaba на несколько моделей</span></li>
+          <li><a href="https://docs.litellm.ai/docs/proxy/virtual_keys">LiteLLM</a><span>Шлюз к моделям: ключи, бюджеты, расход</span></li>
+          <li><a href="https://openrouter.ai/">OpenRouter</a><span>Облачный доступ к моделям разных поставщиков</span></li>
           <li><a href="https://github.com/obra/superpowers">Superpowers</a><span>Навыки и процесс разработки</span></li>
           <li><a href="https://code.claude.com/docs/en/legal-and-compliance">Условия Claude Code</a><span>Подписки и сторонние приложения</span></li>
           <li><a href="https://help.openai.com/en/articles/20001542-using-your-chatgpt-plan-in-other-apps-and-sites">ChatGPT в других приложениях</a><span>Условия OpenAI</span></li>

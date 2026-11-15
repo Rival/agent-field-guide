@@ -360,3 +360,8 @@ dfn { font-style: normal; border-bottom: 1px dotted currentColor; cursor: help; 
 .note.takeaway .note-label { color: var(--teal); }
 .section-stage + h2 { margin-top: 0; }
 @media (max-width: 540px) { .case-prompt { font-size: 13px; } }
+.sub-title { margin: 40px 0 12px; font-size: 21px; font-weight: 800; letter-spacing: -.02em; }
+.bullet-list { margin: 0 0 22px; padding-left: 20px; display: grid; gap: 8px; font-size: 16px; }
+.bullet-list li::marker { color: var(--blue); }
+@media (min-width: 541px) { .compare.subs tbody th { width: 22%; } }
+@media (max-width: 540px) { .sub-title { font-size: 19px; } .bullet-list { font-size: 15px; } }
