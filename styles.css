@@ -435,3 +435,7 @@ pre code { padding: 0; border-radius: 0; background: none; color: inherit; font-
 .vehicle-pair span:not(.vehicle-icon) { color: var(--muted); font-size: 14px; line-height: 1.65; }
 .vehicle-pair em { margin-top: auto; padding-top: 4px; color: var(--teal); font-style: normal; font-weight: 600; font-size: 13px; }
 @media (max-width: 540px) { .vehicle-pair { grid-template-columns: 1fr; } }
+
+/* Calm disclaimer in hero */
+.calm-note { max-width: 68ch; margin-block: 22px 0; }
+.calm-note p:last-child { margin-bottom: 0; }
