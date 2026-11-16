@@ -400,6 +400,12 @@
           <h3><span aria-hidden="true">📋</span> Запрос: зафиксировать опыт</h3>
           <p>«Задача решена. Запиши в заметки проекта, что мы выяснили: причину проблемы, как её проверить и чего избегать. Укажи дату и откуда это известно».</p>
         </div>
+        <p class="auto-lead">Частые запросы не обязательно каждый раз набирать — их можно автоматизировать, от ручного к полностью автоматическому:</p>
+        <ul class="bullet-list auto-ladder">
+          <li><span aria-hidden="true">⌨️</span> <strong>Команда</strong> — запрос сохраняется под коротким именем, например <code>/lessons</code>, и запускается одним словом.</li>
+          <li><span aria-hidden="true">📘</span> <strong>Скилл</strong> — агент сам вспоминает о нём, когда задача решена. Но это просьба: может и пропустить.</li>
+          <li><span aria-hidden="true">🪝</span> <strong>Хук</strong> — расширение, которое срабатывает на событие. Например, после последнего шага плана по <a href="#workflow">спецификации</a> оно само запускает разбор и запись в заметки. Это уже гарантия.</li>
+        </ul>
         <aside class="note limits">
           <p class="note-label"><span aria-hidden="true">⚠️</span> Ограничения</p>
           <ul>
@@ -431,6 +437,14 @@
         </figure>
         <p>Системы вроде <a href="https://github.com/NousResearch/hermes-agent">Hermes</a> и <a href="https://github.com/openclaw/openclaw">OpenClaw</a> позволяют строить постоянных помощников с подключёнными инструментами. У меня Hermes работает на Mac mini: к нему можно обращаться с телефона, не открывая рабочий терминал.</p>
 
+        <aside class="note takeaway vehicles">
+          <p class="note-label"><span aria-hidden="true">🚚</span> Разные машины для разных поездок</p>
+          <div class="vehicle-pair">
+            <div><span class="vehicle-icon" aria-hidden="true">🚛</span><strong>Claude Code, Codex, Pi</strong><span>Самосвал или цистерна: привезти материалы на стройку. Специализированные агенты для работы над кодом, проектом или конкретной задачей с устройством.</span><em>«Я пришёл заниматься проектом»</em></div>
+            <div><span class="vehicle-icon" aria-hidden="true">🚗</span><strong>Hermes, OpenClaw</strong><span>Легковушка на каждый день: заехать в кафе, потом на пляж, вечером в кино. Помощник для дел и быта — сводка, напоминание, объявление, присланный файл.</span><em>«Я написал ему по ходу дня»</em></div>
+          </div>
+          <p>Чёткой границы нет: оба умеют и то и другое, и на легковушке можно отвезти пару мешков цемента. Это разные акценты, а не жёсткое разделение возможностей.</p>
+        </aside>
         <h3 class="table-title">Чем он гибче веб-интерфейса агента</h3>
         <div class="table-scroll" role="region" aria-label="Сравнение веб-интерфейса агента и своего помощника" tabindex="0">
           <table class="compare">
@@ -462,7 +476,6 @@
             <li>Встроенная поддержка любого мессенджера не гарантирована — адаптер и права нужно проверить.</li>
           </ul>
         </aside>
-        <aside class="note takeaway"><p class="note-label"><span aria-hidden="true">💡</span> Разница</p>Агент в рабочем терминале — «я пришёл заниматься проектом». Постоянный помощник — «я написал ему по ходу дня». Это разные акценты использования, не жёсткая граница возможностей.</aside>
       </section>
 
       <section id="hosting">
