@@ -404,3 +404,17 @@ pre code { padding: 0; border-radius: 0; background: none; color: inherit; font-
   .compare.car td:last-child { padding: 0 12px 9px; font-size: 12px; color: var(--muted); }
   .compare.car td::before { display: none; }
 }
+
+/* ── Under the hood ── */
+.hood-part { margin-top: 34px; padding-top: 28px; border-top: 1px dashed var(--rule); scroll-margin-top: 20px; }
+.hood-part h3 { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 12px; }
+.hood-num { display: grid; place-items: center; flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: white; font-size: 14px; }
+.msg-log { margin: 0 0 20px; padding: 16px 18px; border-radius: 8px; background: var(--ink); color: #e6eef8; font-size: 13px; line-height: 1.7; overflow-x: auto; white-space: pre; }
+.msg-log b { font-weight: 600; }
+.r-sys { color: #f5c46b; } .r-user { color: #8fd3ff; } .r-asst { color: #a8e6b8; } .r-tool { color: #d6b4ff; }
+.back-link { margin: 4px 0 0; font-size: 13px; }
+.back-link a { text-decoration: none; }
+.back-link a:hover { text-decoration: underline; }
+@media (max-width: 540px) { .msg-log { font-size: 11.5px; padding: 13px 14px; } .hood-part h3 { font-size: 18px; } }
+@media print { .back-link { display: none; } }
+.msg-log:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
